@@ -13,5 +13,5 @@
 - get-help 'command' will pull up basic help file for the command
 - get-help 'command' -full will pull up the full help page including examples
 - get-help 'command' -examples will bring up only examples
-- get-help * string * will find all commands with the specified string in it
+- get-help \*string* will find all commands with the specified string in it
  

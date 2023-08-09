@@ -56,3 +56,21 @@
 
 ### Adding Methods
 - The syntax is add-member -MemberType ScriptMethod -InputObject $mytruck -name drive -value { "going on a road trip"}
+
+## Conditions and Comparison Operators
+- Wild card statements can only be used with -like and -notlike
+- The operator -match and -notmatch can use regex
+- To see if a string is in an array you can use -contains and -in
+- Operators for integers can be -lt -eq - mt -le -me
+- Using -and you can print something that requires two arguments to be true
+- You can use if statements but just using "if"
+- When executing if-else statements both arguments must be enclose in {}
+- Switch statements relay on the variable being constantly changing
+- To use a for each loop use the command ForEach-Object {}
+- While loops are formated the same way as they are in python
+- Do until will iterate through the loop untile the condition is met
+
+### Reading and Writing to Files
+- Use Get-Content to read a file
+- Use Set-Content -path " " -value " " to write to a file
+- Add-Content -path " " -value " " to append to the file

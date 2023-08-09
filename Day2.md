@@ -23,4 +23,36 @@
   - $mdarray = @((1, 2, 3), (4, 5, 6), (7, 8, 9))
   - $mdarray[1][0] = 5
 
+### Hash Tables
+- Create a hash table using @{}
+  - $myHash = @{First = "John"; Last = "Doe"; Mid = "Bon"; Age = 35}
+- Return the values by their names
+  - Ex. $myHash["First"] = Returns "John"
+- $myHash.keys returns all names or keys in the Hash
+- $myHash.values returns all the values in the hash(
 
+### Script Blocks
+- A variable that contains commands
+- Syntax for this would be: $myblock = {get-service | format-table name, status}
+- To call a script block use the syntax: & $myblock
+
+### Sorting and Grouping
+- The syntax to sort items is: Sort-Object
+- When wanted to sort something by a specific parameter such as size the syntax will be: Sort-Object -Property Length
+  - Sort Length also works
+- If the list should be in descending order use the syntax: sort -Descending
+
+### Selecting Objects 
+- Select-Object will allow you to choose the output of a command
+
+### Where Object
+
+### Get Unique
+- Before using make sure to sort-object
+
+### Creating Objects
+- The syntax to create an object is: $myTruck = new-object object
+- To add prperties use syntax: add-member -MemberType NoteProperty -name Color -value red -InputObject $myTruck
+
+### Adding Methods
+- The syntax is add-member -MemberType ScriptMethod -InputObject $mytruck -name drive -value { "going on a road trip"}

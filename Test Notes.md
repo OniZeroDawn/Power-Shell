@@ -32,4 +32,11 @@
 
 ## Question 6
 - Get todays date in year month number and day of month in yyyymmdd format
-- 
+- $fmt= '%y%m%d'
+  return get-date -uformat $fmt
+
+## Question 7
+- Provided on the pipeline
+  - $_
+    or
+    $input
